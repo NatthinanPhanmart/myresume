@@ -36,25 +36,16 @@ const Resume: React.FC = () => {
 
   const projects = [
     {
-      src: "project1.png",
-      title: "แแอปสั่งอาการ",
-      description:
-        "แอปพลิเคชั่นที่ช่วยให้ผู้ใช้สามารถสั่งซื้ออาหารผ่านระบบออนไลน์",
-      link: "https://github.com/yourname/project1",
+      title: "แอปสั่งอาหาร",
+      description: "แอปพลิเคชันที่ช่วยให้ผู้ใช้สามารถสั่งซื้ออาหารผ่านระบบออนไลน์",
     },
     {
-      src: "project2.png",
       title: "เว็บไซต์ขายของมือสอง",
-      description:
-        "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถสั่งซื้อสินค้ามือสองสองผ่านระบบออนไลน์",
-      link: "https://github.com/yourname/project2",
+      description: "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถสั่งซื้อสินค้ามือสองผ่านระบบออนไลน์",
     },
     {
-      src: "project3.png",
       title: "เว็บจองรถ",
-      description:
-        "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถจองรถผ่านระบบออนไลน์",
-      link: "https://github.com/yourname/project3",
+      description: "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถจองรถผ่านระบบออนไลน์",
     },
   ];
 
@@ -107,17 +98,15 @@ const Resume: React.FC = () => {
             align-items: center;
             justify-content: center;
           }
-
           .header img {
             width: 120px;
             height: 120px;
-            border-radius: 50%; 
-            margin-bottom: 20px; 
+            border-radius: 50%;
+            margin-bottom: 20px;
             object-fit: cover;
-            border: 4px solid #fff; 
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
           }
-          
           .header h1 {
             font-size: 3rem;
             margin: 0;
@@ -171,10 +160,6 @@ const Resume: React.FC = () => {
             transform: scale(1.05);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
           }
-          .project-item img {
-            width: 100%;
-            border-radius: 8px;
-          }
           .project-item h3 {
             font-size: 1.5rem;
             color: #0078d7;
@@ -182,14 +167,6 @@ const Resume: React.FC = () => {
           }
           .project-item p {
             margin: 10px 0;
-          }
-          .project-item a {
-            color: #0078d7;
-            text-decoration: none;
-            font-weight: bold;
-          }
-          .project-item a:hover {
-            color: #005fa3;
           }
         `}
       </style>
@@ -225,7 +202,7 @@ const Resume: React.FC = () => {
         <section id="การศึกษา" className="section">
           <h2>การศึกษา</h2>
           <ul>
-            <li>ปริญญาตรี คณะเทคโนโลยีสารสนเทศ - มหาวิทยาลัยพะเยา (กำลังศึกษาชั้นปีที่2)</li>
+            <li>ปริญญาตรี คณะเทคโนโลยีสารสนเทศ - มหาวิทยาลัยพะเยา (กำลังศึกษาชั้นปีที่ 2)</li>
           </ul>
         </section>
 
@@ -246,10 +223,8 @@ const Resume: React.FC = () => {
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div className="project-item" key={index}>
-                <img src={project.src} alt={project.title} />
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a href={project.link} target="_blank">ดูโปรเจคบน GitHub</a>
               </div>
             ))}
           </div>
