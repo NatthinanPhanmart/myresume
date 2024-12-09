@@ -37,23 +37,23 @@ const Resume: React.FC = () => {
   const projects = [
     {
       src: "project1.png",
-      title: "เว็บไซต์ร้านค้าออนไลน์",
+      title: "แแอปสั่งอาการ",
       description:
-        "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถสั่งซื้อสินค้าผ่านระบบออนไลน์ด้วยการใช้ React และ Node.js.",
+        "แอปพลิเคชั่นที่ช่วยให้ผู้ใช้สามารถสั่งซื้ออาหารผ่านระบบออนไลน์",
       link: "https://github.com/yourname/project1",
     },
     {
       src: "project2.png",
-      title: "ระบบจัดการงาน",
+      title: "เว็บไซต์ขายของมือสอง",
       description:
-        "แอปพลิเคชันจัดการงานที่ใช้ Vue.js และ Firebase เพื่อจัดการการติดตามงานและการตั้งเวลา.",
+        "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถสั่งซื้อสินค้ามือสองสองผ่านระบบออนไลน์",
       link: "https://github.com/yourname/project2",
     },
     {
       src: "project3.png",
-      title: "เว็บบล็อก",
+      title: "เว็บจองรถ",
       description:
-        "บล็อกที่สามารถเขียนบทความและแสดงความคิดเห็นได้ ด้วยการใช้ Node.js และ MongoDB.",
+        "เว็บไซต์ที่ช่วยให้ผู้ใช้สามารถจองรถผ่านระบบออนไลน์",
       link: "https://github.com/yourname/project3",
     },
   ];
@@ -102,13 +102,22 @@ const Resume: React.FC = () => {
             color: #fff;
             border-radius: 10px;
             margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
           }
+
           .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+            object-fit: cover;
+            border: 4px solid #fff; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
           }
+          
           .header h1 {
             font-size: 3rem;
             margin: 0;
@@ -216,7 +225,7 @@ const Resume: React.FC = () => {
         <section id="การศึกษา" className="section">
           <h2>การศึกษา</h2>
           <ul>
-            <li>ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ - มหาวิทยาลัยตัวอย่าง (2560-2564)</li>
+            <li>ปริญญาตรี คณะเทคโนโลยีสารสนเทศ - มหาวิทยาลัยพะเยา (กำลังศึกษาชั้นปีที่2)</li>
           </ul>
         </section>
 
